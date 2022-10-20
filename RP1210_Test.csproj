@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Edwin\KB Home Content\File Data\7e84328d-5957-4a5c-8732-35484119a37a\2022_09_26___03_42_30_PM- - -peak-driver-rp1210-download\PCAN-RP1210\Test_Application\RP1210_Test.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA83F5FE-975D-4FF0-9141-B5149B58AEF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>RP1210_Test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>2.0.2.27</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Peak\Classes\SubArray.cs" />
+    <Compile Include="Peak\Classes\ArrayMapper.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CMaxValue.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CProtocol.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CJ1939Filter.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CISO15765MsgType.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CISO15765Indication.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CISO15765Error.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CCommand.cs" />
+    <Compile Include="Peak\RP1210C\RP1210CError.cs" />
+    <Compile Include="Peak\RP1210C\PEAKRP32Plus.cs" />
+    <Compile Include="RP1210_Test\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\AddFlowControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\BroadcastsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FlowControlsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\AddressClaimingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormChangeBaudrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormCustomFilterCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormCustomFilterISO15765.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormCustomFilterJ1939.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\ConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormTxMsgCan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormTxMsgISO15765.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\FormTxMsgJ1939.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RP1210_Test\Program.cs" />
+    <Compile Include="RP1210_Test\Properties\Resources.cs" />
+    <Compile Include="RP1210_Test\Properties\Settings.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210C_FilterType.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210C_FilterStatus.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\IniFileReader.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_Baudrate.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_InformationReader.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_ImplementationInformation.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_DeviceInfo.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_ProtocolInfo.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_FilterCan.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_FilterJ1939.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_FilterIso15765.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_FilterManager.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_Configuration.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\ListViewMessageSend.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\ListViewMessageStatus.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\MessageDataHandler.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_SerialisableMsg.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_MsgCan.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_MsgJ1939.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_MsgIso15765.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_MsgCanRx.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_MsgJ1939Rx.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_MsgIso15765Rx.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210_BroadcastMsg.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210J1939Name.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210J1939Network.cs" />
+    <Compile Include="RP1210_Test\HelpClasses\RP1210ISO15765FlowControl.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RP1210_Test\AboutBox.resx" />
+    <EmbeddedResource Include="RP1210_Test\AddFlowControlForm.resx" />
+    <EmbeddedResource Include="RP1210_Test\AddressClaimingForm.resx" />
+    <EmbeddedResource Include="RP1210_Test\BroadcastsForm.resx" />
+    <EmbeddedResource Include="RP1210_Test\ConfigurationForm.resx" />
+    <EmbeddedResource Include="RP1210_Test\ConnectionForm.resx" />
+    <EmbeddedResource Include="RP1210_Test\FlowControlsForm.resx" />
+    <EmbeddedResource Include="RP1210_Test\Form1.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormChangeBaudrate.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormCustomFilterCan.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormCustomFilterISO15765.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormCustomFilterJ1939.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormTxMsgCan.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormTxMsgISO15765.resx" />
+    <EmbeddedResource Include="RP1210_Test\FormTxMsgJ1939.resx" />
+    <EmbeddedResource Include="RP1210_Test\Properties\Resources.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
