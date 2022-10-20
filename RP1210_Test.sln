@@ -4,7 +4,7 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RP1210_Test", "RP1210_Test.csproj", "{AA83F5FE-975D-4FF0-9141-B5149B58AEF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryRP1210Test", "..\TryRP1210Test\TryRP1210Test.csproj", "{35B5631B-C9FB-4A80-9B6E-FDE64E3FD39E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryRP1210Test", "TryRP1210Test\TryRP1210Test.csproj", "{35B5631B-C9FB-4A80-9B6E-FDE64E3FD39E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
