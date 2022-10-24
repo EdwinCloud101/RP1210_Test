@@ -61,9 +61,6 @@
     <Compile Include="Lib\PEAKRP32Plus.cs" />
     <Compile Include="Lib\Peak\Classes\ArrayMapper.cs" />
     <Compile Include="Lib\Peak\Classes\SubArray.cs" />
-    <Compile Include="Lib\Peak\RP1210C\PEAKRP32Plus.cs" />
-    <Compile Include="Lib\Peak\RP1210C\RP1210CCommand.cs" />
-    <Compile Include="Lib\Peak\RP1210C\RP1210CError.cs" />
     <Compile Include="Lib\Peak\RP1210C\RP1210CISO15765Error.cs" />
     <Compile Include="Lib\Peak\RP1210C\RP1210CISO15765Indication.cs" />
     <Compile Include="Lib\Peak\RP1210C\RP1210CISO15765MsgType.cs" />

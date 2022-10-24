@@ -282,7 +282,7 @@ namespace TryRP1210Test
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.HandleMessage((object)new RP1210_MsgCanRx(SubArray.GetBytes(this.m_ReadBuffer, 0, (int)num), this.m_Configuration.ReceivingEcho));
+            //this.HandleMessage((object)new RP1210_MsgCanRx(SubArray.GetBytes(this.m_ReadBuffer, 0, (int)num), this.m_Configuration.ReceivingEcho));
         }
     }
 }
