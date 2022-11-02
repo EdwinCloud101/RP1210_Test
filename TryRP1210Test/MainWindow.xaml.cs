@@ -180,7 +180,9 @@ namespace TryRP1210Test
 
         private void btnBaud_Click(object sender, RoutedEventArgs e)
         {
-            byte[] numArray = new byte[8];
+            //byte[] numArray = new byte[8];
+            byte[] numArray = new byte[17];
+
             //var speed = this.m_PEAKRP32.SendCommand(RP1210CCommand.RPCMD_GET_PROTOCOL_CONNECTION_SPEED, this._clientId, numArray);
             var speed = this.m_PEAKRP32.SendCommand(RP1210CCommand.RPCMD_GET_PROTOCOL_CONNECTION_SPEED, this._clientId, numArray);
 

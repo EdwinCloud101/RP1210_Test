@@ -261,8 +261,7 @@ namespace Peak.RP1210C
             else
             {
                 var hasCommandData = fpchClientCommand != null;
-                var commandReturn = this.m_PtrSendCmd(nCommandNumber
-                    , nClientID, fpchClientCommand, hasCommandData ? (short)fpchClientCommand.Length : (short)0);
+                var commandReturn = this.m_PtrSendCmd(nCommandNumber, nClientID, fpchClientCommand, hasCommandData ? (short)fpchClientCommand.Length : (short)0);
 
                 return commandReturn;
             }
